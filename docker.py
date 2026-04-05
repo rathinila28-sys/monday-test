@@ -36,7 +36,7 @@ pipeline {
  }
  stage('Deploy to Kubernetes') {
  steps {
- bat 'kubectl apply -f deployment.yaml'                    # INPUT REQUIRED if your YAML file name/path differs
+ bat 'kubectl apply -f #deployment.yaml#'                    # INPUT REQUIRED if your YAML file name/path differs
  }
  }
  }
